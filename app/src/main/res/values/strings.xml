@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeightTracker</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >8 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="register">Register</string>
+    <string name="date">Date</string>
+    <string name="weight">Weight</string>
+    <string name="entryNumber">#</string>
+    <string name="messageNotifications">Enable message notifications</string>
+
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="20dp">
+
+
+        <TableRow
+            android:background="@color/royalBlue">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/entryNumber"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/dateText"
+                android:layout_height="wrap_content"
+                android:text="01/01/2021"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/weightText"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:onClick="deleteRow"
+                tools:ignore="OnClick" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
